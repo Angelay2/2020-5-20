@@ -9,16 +9,21 @@ using std::endl;
 using std::string;
 using std::list;
 
-/*迭代器: 访问容器元素的一种方式, 可以通过迭代器遍历容器中的元素, 
+/*
+迭代器: 访问容器元素的一种方式, 可以通过迭代器遍历容器中的元素, 
 		可以把迭代器看做指针, 使用方法和指针类似: 可以进行访问位置的移动; 比如++,--,可以进行类似指针的解引用: *, ->
+		所有stl中容器的迭代器使用方式完全相同， 迭代器的名字也完全相同， iterator
+		[begin,end) 左闭右开的区间
+		begin：第一个元素的位置
+		end: 最后一个元素的下一个位置
+反向迭代器：使用方式和正向迭代器一样
+		reverse_iterator
+		(rend, rbegin]: 左开右闭的区间
+		rbegin:最后一个元素的位置
+		rend: 第一个元素的前一个位置
+正向迭代器，反向迭代器： iterator, reverse_iterator 都为可读可写的迭代器
+正向的const迭代器，反向const迭代器： const_iterator, const_reverse_iterator 都为只读的迭代器
 
-
-
-
-
-
-正向迭代器, 反向迭代器: iterator, reverse_iterator 都为可读可写的迭代器
-正向的const迭代器
 */
 
 /*
